@@ -29,3 +29,7 @@
     cursor: pointer;
     padding: 1rem;
 }
+.form option {
+    background-color: var(--primary);
+    color: var(--white);
+}
