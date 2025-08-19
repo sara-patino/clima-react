@@ -30,3 +30,5 @@ Para poder usar la aplicación, necesitas una API Key de [OpenWeatherMap](https:
 2. Obtén tu **API Key**.
 3. Configura la variable de entorno en tu proyecto:
 
+## 🚀 Deployment
+[URL](https://buscador-clima-react-sarapatino.netlify.app/)
