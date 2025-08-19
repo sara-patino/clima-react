@@ -30,5 +30,3 @@ Para poder usar la aplicación, necesitas una API Key de [OpenWeatherMap](https:
 2. Obtén tu **API Key**.
 3. Configura la variable de entorno en tu proyecto:
 
-```bash
-VITE_WEATHER_API_KEY=tu_api_key_aquí
