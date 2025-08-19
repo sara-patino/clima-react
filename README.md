@@ -1,69 +1,34 @@
-# React + TypeScript + Vite
+# 🌤️ Weather App - Buscador de Clima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React + TypeScript** que permite consultar el clima actual de cualquier ciudad del mundo en tiempo real, consumiendo la API de [OpenWeatherMap](https://openweathermap.org/).
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** (con Vite o CRA, según setup)
+- 🟦 **TypeScript**
+- 🎨 **CSS Modules** para estilos encapsulados
+- 🌐 **OpenWeatherMap API** para obtener datos del clima
 
-## Expanding the ESLint configuration
+## 📸 Vista previa
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Weather App Screenshot](./screenshot.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Búsqueda de clima por **ciudad** y **país**.
+- Muestra:
+  - 🌡️ Temperatura actual.
+  - 🔻 Temperatura mínima.
+  - 🔺 Temperatura máxima.
+- Interfaz sencilla y responsive.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔑 Configuración
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Para poder usar la aplicación, necesitas una API Key de [OpenWeatherMap](https://openweathermap.org/api).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Regístrate en la plataforma.
+2. Obtén tu **API Key**.
+3. Configura la variable de entorno en tu proyecto:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+VITE_WEATHER_API_KEY=tu_api_key_aquí
