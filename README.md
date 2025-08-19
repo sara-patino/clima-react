@@ -11,7 +11,7 @@ Aplicación web desarrollada con **React + TypeScript** que permite consultar el
 
 ## 📸 Vista previa
 
-![Weather App Screenshot](./screenshot.png)
+![Weather App Screenshot](./public/screenshot.png)
 
 ## ⚙️ Funcionalidades
 
